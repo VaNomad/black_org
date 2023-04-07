@@ -1,8 +1,5 @@
 import { Auth } from '@supabase/auth-ui-react'
-import {
-  // Import predefined theme
-  ThemeSupa,
-} from '@supabase/auth-ui-shared'
+import { ThemeSupa} from '@supabase/auth-ui-shared'
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient(
@@ -14,6 +11,7 @@ const App = () => (
   <Auth
     supabaseClient={supabase}
     appearance={{ theme: ThemeSupa }}
+    theme="default"
   />
 )
 
